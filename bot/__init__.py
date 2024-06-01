@@ -502,3 +502,5 @@ bot.start()
 bot_loop = bot.loop
 
 scheduler = AsyncIOScheduler(timezone=str(get_localzone()), event_loop=bot_loop)
+alive = Popen(["python3", "alive.py"])
+sleep(0.5)
